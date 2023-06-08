@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/jslesson.css">
+
+    <title>JS Lesson</title>
+</head>
+<body>
+
+<!--header section starts-->
+
+<header class="header">
+
+<a href="index.html" class="logo">wITus</a>
+
+
+<div class="fas fa-bars"></div>
+
+
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jslesson.html">JS 1</a></li>
+        <li><a href="jslesson2.html">JS 2</a></li>
+        <li><a href="jslesson3.html">JS 3</a></li>
+        <li><a href="jslesson4.html">JS 4</a></li>
+    </ul>
+</nav>
+
+
+
+</header>
+
+<!--header section ends-->
+
+<!--about us section starts-->
+
+<section id="homes" class="About">
+
+<h1 class="banner">ICT WEBPAGE EDUCATION</h1>
+<h3 class="slogan">Welcome to wITus - Your Ultimate Destination for ICT Education!</h3>
+<a href="jslesson2.html"><button>Next Lesson</button></a>
+
+
+<div class="wave wave1"></div>
+<div class="wave wave2"></div>
+<div class="wave wave3"></div>
+
+<div class="fas fa-cog nut1"></div>
+<div class="fas fa-cog nut2"></div>
+
+</section>
+
+
+
+
+
+
+
+<section id="about" class="About1">
+
+<h1 class="heading">JS Lesson 1: Introduction to JavaScript</h1>
+
+<div class="row">
+
+    <div class="image">
+        <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAsVBMVEX///8AAABVVYhTU4dQUIVNTYRFRX9lZZPr6+uBgaWdnZ2ioqJOToTd3d0VFRVoaGj39/eiortERH/ExMRwcHBQUFDu7vIQEBDJycmbm7bx8fHU1NQ+Pj7j4+O9vb1WVlbg4Oirq6tJSUkxMTF3d54jIyPNzdqPj66Ghqizs8eEhIReXl7b2+StrcNsbJfT09/CwtKTk5OysrJtbW0tLS04ODh7e3s9PXxdXY1nZ5QdHR19eePjAAAMyklEQVR4nO2d6XqqOhSGUSBVixXRWufi0FqnOrSn7e79X9ghkGEFomCrFTHfs38oJCF5zbDWSujWNCUlJSUlJSUlJSUlJSUlJSUlJaV9mo7zev61ap+7Hpepf8jI5/O6mW+cuyaXqJaZD2SNz12V9KmxWi9brcnL7pGp56k+k3a/5fhl0lquV+3j1DGtWrTyCJmmZVloJ76Gw/Ch54TltkzDK9NE6GaZ3QHfGDsW6Vq6mQSfmRiflafloumRaps2uf6KEItPQ2z0Om7Cohk+r2Q0OUptUyedT2p78RUpZV1PWjTA5w359VGqmzJNzXwyfK4T8NM/k45dEZ/+dZT6pkxjIyE+zX11kImcr8T0RHzJx/wlCQxdb4383OtSNFbPq0OW0MknMnn5ZgZHbwPx3jF5do9sXzTc9Q3rgebyuIWnQQyfbi5O84QXOjtY1dM84Jxi+MxTGWY27X5mlvE5vxu37mo9na7XC0kp1OLJND4zLmVrXAw0fgndcavemuw5fZ6QYxWnIYRVK/v4dCsuZdE0Alk3wvXVK/P5fBmmczOFC3jVvAJ8sb2Pex0CvpYD2dHC0IQDVPiw5PiKZgSen8bgSRQ+LCm+FpLSE2w8hQ9Lhs91pPC8dRxMfgoflgzfBMa6TG/xJd8NGJ1S+LBk+LhHa90sn1fr5YuODO8ackFGhQ9Lgs9lM5/Bto8WE2QarzCjwoclwbdi+BB0mKdibIXiy6LP6/4G3zPH5+7OSPEZYW8lA1qy3du4lHt7376AA3Xa8sbuNBcqm9KLD6Xvnfv0PbtvbDsgc5Nf44YyiR9ZspWXG806muwK2SxYKidLAVN70QKbj7E7GDJ8cKPEcHYB/GJPMb+mbhZOGNmv/zy/nu/kiKaGVDJ8a8Fns9CLK8u5+uSd1LOtDePit8xtU4iTmF/xfULq896I4RYLFV1J1qkYlTlZYPvPBPHpppPkBIAUX8TpNdDYjeZd3CAQE8wUPvSa7PyOPGC1ioT7jE/Zj7FovRpZxPeVdINtR7jU/YpE/Ky8K8m/YPGFLOHLIzROtH+9Ax/2KsxQD9RNN5T5eYxQJnsfjgyjJF1wJz7NrqIQwNApovYYwaMgGcDnmAY8WfW5is2yG18AUOAnOBi2BeDplulcPD5tupyMYZ9xYi2Xffg07DwLR7XgMdUxty9NZ9yaTt2jNeOsggdQYv3RGHwYIDhQBQ7wcuNGt6ZZ8Dm4Xtjx2Vi3IxafZk+4EwKCeyxkoGfvlQbuj8aljMcHwl95i4cgWMAKxU+wlybeNeJSJsHHfw2jyK7RcOm+fJcqFrIT8TWmk3GxJfQWCb7oRPYiCYCxaHPr6LU/uxpSfEvHtAzDRGMASIJvkQ8b3CyEAJaia9gqEvCt6VppggVFFm32KE9goJAHsMBu0dXh02VR1B3BeguZxWVw4tkFRzbAccFrw+cC+4NHT3budejeKEcO/gfCr+C1wWvDxzfQIIa9W0VhOcCJvjZ8z7/GZ8JF9trwHTh4JfSEN36vDR/YfwQvoklXXhk8PRT7vzp8U3rRAI6CBF/jn3is2e+v6Cbkm10DPvGMy8TDoucN4c8WyLeKqv8QwiZ2cGjcRPok4ti2ruHFBPGQz2qSN82xENbc5fPaq3W19VIcj4uT6loohOiffgX4rLjNykQhA4mYGZRpfHkU49H/EN8zj2FlEJ/NQ+yWNW7tOcPzA3zP1ckXX8Uvf4dIImhxeN7X7mD6K11j9X9Jy27BswXJ/wDHJekFbiHue5uc7SvFx/WpxLfJUeZC9Z6enWT41myUJz9kK+AzsvnHh+BrVbvxNfgoTL4EQHz6vuPPl6wxPyQpwde4qa5Xz1WwqZ58DgP4rFO9rH5+rfOInAOQ4XMs/LoQGIXxO+pUBJ+3JDmTbG3wilpUx4bjIISiaBqRE3xFWQlStfwi0c1knWV4RA13sYruxEbwOclHobtauJk4y/xzhfGZGf1bVCdSCJ+V2OhTwhLxoWwab6dT49Mg+5a6gawsuq2n1bL4ZSKsr5cM/hGqv5DdaLiN615BlZSUlJSUlJSUlJSUlK5B7XKz2Sn8yAMujR4q5WPX5/gajLqeRoPjl9ys3+UCPdW3h/4vJvd+xs7xa3VklYIW3h673PJ/OUHzQ1D0CPjhsWt1dJ0I3yAX0QGP6L+RPAnSlsu9cu/H9fytToNPQi93yPgtJcbXw8m6P67ob3USfAUJvY9DCmiSSTM+pV//+59W9Nc6Cb6KBN9hA2zo5+nHJxxlD59NkW06vV5n+/GTFs5yuYcE9PyxmzF8tfBsV/7INY/5AK5N2vDZzU39vjt8m/WD1vdqvqDdYff9S0HnKGxnlWH3sV7igG6DMqEtKa4bzc3bsDusb5qBRR08AT9rM/dK2tToE/yH2v5HXHpzNu/e1wcFXlDhyX9St+nX5wz/RV4IXxNOWxVc0WZ0EdwGVx69pg26IH2J3A+6RG6H02DP4CMwoeBjQavnaMHl4MMcpyfrkLalVnhuTgAW6jlBZ7CyBXy1kVifXI01DtbtMbjSp5yYRkFv2uxrTT+Ux+vDARf+8BnFV8EZCL55KJMWefqu3+uUgvhq4fr4CEhn2bAsdGXQ5pHkIz/BIPhSkj3vNpzFpvi4BjJ8ovDv+pgyfNpTpJqe5dUJPj2wLKT/vNE7UD5ker0QfVy473mlRPE14/HhsiO/3rnxbaPV9H7m71Dl5uzOMJreTwEyi2pH0uMlIYyvlwDfIw0rAJ177tMe8OfuZtvf0iWkzuYYNno5qGBZqZT6/RKNEPjrL5vShyGAH/RGdzarP1HcAN9wPsLjWY5veNvvs3Wno21LJVK10W3J00bS208tEZ83M8167CPWt0bb8k1y9BlXbPPfbUk4j/REf8IDHebuFoT76Kz5HjyjUApcOYZvFlzW5PiCOtKvdVDg42nYJJCIz57xxvJO9h58IqO3ArpZbcuS1yAB6vL7+mD22IBc4Q/xb1F8fHWS4ZuLD/L7LcGXIrOZqcuaKo5eUHso0koSGWCjFDBla+UmlJXg++ZXZPiYWf4QfMczXYrx3TN8gWOZe/cv1wRMXCRRXSyX6C4YreRbOHpwF6mDDB/rsuSnwU5N+vC1tx/30IDBtR6BZr+F+kL5ttJ94Mnr7Lq4LOORT0GE63DHk9DMEnzs5iD4jrt02vB1ItaAzRP5y4LYmEHY6Kjzopv3oXIIlFG4Dnf8SUQSfP+xmzX+pJThE6cs1qgCb7ewQvSidnYdFl4A7u0Hc58jjb0TfhEsCT6eq8MvpAtfxA2ifYKPXmLS+RZqT5K8Li/fL4ign4eSHIqP3MT7SKnCF/HBGT4+eoMPgQf3nQCfZlPfqk9732/xpbT3sSBx7r0yK23/A/jY/EMI+GN3wNIP67NSaQc+5uTNaLsj24+J8PG5D/wKacJHcRAzlxsuGjMC22QyK4NrucB0bu/E16EsCJT3cIJE+Pht4plj0ylN+Cq8WlgjiI+4cP1grfB3wGhnJSZMyO4DatNOR3OET20ciA9Y8WnCR3oTjVsIbSVt6PKa73OFRdG8ssirr2T4mFlIKoGjEe0U4SOuLfEJqGspRgRAS0Iz2ZzjK4ndi4P9AFSAkuGjrh79jqcYW6zD32tn76P2MEExAPSCyYs08S64T7dEMD6yhUHUJj7JgP8kbAeyXO9qSfHRjTsyx/hLCQt8n0sAH+k/fvSnwzYeCD4Y6Az6Aa26v6HG6GJ8Pq/6oNO27XaHWUNtjXn7uVnPtu3yYBg8LSG+Oz9IQC3xwFIlBfou4eC84VJm4d7fA4uODkTggZHhTQZ7bjQHI5vhCwtH5TllpgPweebmf3wvyxZqNezeJTqUcGwBfPKoOMXHA/nUZ5Va2TvxBUOvG758ED4gHt/lOi8+GkyR4+NGdSlyJQE+Yt5ENjt+iG8oq8OZ8dli+ORBwMcdYralUJMkD5aOXfSiMLDNsRPfXJYDiwdtYPc7Mz6tDbbJH8ofIj46ern3JGw7ztsM3yDc/Srg+IQt9nHclR924Kv4/gwN94BCoeUDgjpb7c9FJjB6HmVAAH6XMK+np6cHhs/OPWAJgWnqxOXuve41/H56ugt8lubHO2vU+yYUXe7NaC8flXyuT0HBIEkZP4vscxJ8j1qJhMcq4grbJAvXUynszfyByNLFNxTbnX6/c8CWX6/Wr5VlFS90av1+sydtE77XlOaSpCU/EP7Y9AqMpvCqXOv87fkg8gvSEXmGLdKkigSsUiBvxXqcbTbUYIvEz1OklOKDOsFrHUdT+vElOIJ9PqUf3/nei0ig1ONL97tPKcdXOcOR4EOURnxab/PomfHvb4MUmyyBUonvcqTw/UoEX/rfrkyn7FoTK93rm5KSkpKSkpKSkpKSktKJ9D+Lztx0/yZJHwAAAABJRU5ErkJggg==" alt=""></image>
+   </div>
+
+    <div class="content">
+        <h3>Welcome to the world of JavaScript! In this lesson, we will cover the basics of JavaScript and how it can be used to add interactivity to web pages.</h3>
+        <p> Whether you're a beginner or an aspiring programmer, this lesson will provide you with a solid foundation to start your JavaScript journey.</p>
+        <a href="jslesson2.html"><button class="btn">Next Lesson</button></a>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="content">
+        <h3>1. What is JavaScript?</h3>
+        <p>JavaScript is a high-level, interpreted programming language primarily used for adding interactivity to web pages. It runs on the client-side (in the web browser) and allows you to manipulate HTML elements, handle events, perform calculations, and much more.</p>
+        <a href="jslesson2.html"><button class="btn">Next Lesson</button></a>
+    </div>
+
+    <div class="image">
+         <image src="https://developerpitstop.com/wp-content/uploads/2021/07/Learn-javascript-in-a-week.jpeg" alt=""></image>
+    </div>
+
+</div>
+
+<div class="row">
+ 
+    <div class="image">
+        <image src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/352700041_1736981910086408_2525790751913919019_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHeW2H1NGMeKkLOZpPtNHLe2IEuRMlJ6DPYgS5EyUnoM2hGGCLxVdtEEpQXBxTPE0KEE_eUBP0sHwiqKDyL0ULS&_nc_ohc=nnZJiFHQ1X0AX_ggOhE&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdT8BgGsc47_cotzUmOGLnBs-977sjPV97rbR0uqmbbdHw&oe=64A7AA04" alt=""></image>
+   </div>
+
+    <div class="content">
+        <h3>2. Embedding JavaScript in HTML:</h3>
+        <p>To include JavaScript code in an HTML file, you can use the "script" tag. The "script" tag can be placed in the "head" or "body" section of the HTML document. Here's an example:</p>
+        <a href="https://onecompiler.com/javascript?fbclid=IwAR1BcgykU20CbLTov-9lry1BdZWRPysEFBmFtiayBtk8YGX9V9zDbw9jhqEl"><button class="btn">Try here</button></a>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="content">
+        <h3>3. Outputting Content:</h3>
+        <p>You can use the console.log() function to display output in the browser's console. Open the browser's developer tools (usually by right-clicking on the web page and selecting "Inspect" or "Inspect Element"), go to the "Console" tab, and you'll see the output there. Example:</p>
+        <a href="https://onecompiler.com/javascript?fbclid=IwAR1BcgykU20CbLTov-9lry1BdZWRPysEFBmFtiayBtk8YGX9V9zDbw9jhqEl"><button class="btn">Try Here</button></a>
+    </div>
+
+    <div class="image">
+         <image src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/348363330_1900040970373076_7153412310455645970_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHMkdhqT1InxHl--U6e_pNGhM-ArPiaDsyEz4Cs-JoOzOE1MucjZ0c0aLzKObAhDroBHWwhOY0YYHCYGprlF4FJ&_nc_ohc=3d4MLss0hFkAX9Se1-U&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdTyTHLG1AIsso76cCeLoR7cXYSpqyOhBcf_os8jPTZ2Hg&oe=64A794E6" alt=""></image>
+    </div>
+
+</div>
+
+<div class="row">
+ 
+    <div class="image">
+        <image src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/352646157_957807592200310_4572342985639886858_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHCce-LMjCDZGnrrvl5wuvKAGdIhiYYRhUAZ0iGJhhGFRRAtomwlUUMNtI0vJ9Naf40wDvUrUpCiuFryvlAegw3&_nc_ohc=PQWDA0LBJoQAX9bH7NN&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdTo_rJ1D6wu0yIFf0zUcLtYzzK9_GQKYxJBUCVTPkiZ0g&oe=64A78C9A" alt=""></image>
+   </div>
+
+    <div class="content">
+        <h3>4. Variables and Data Types:</h3>
+        <p>Variables are used to store data. In JavaScript, you can declare variables using the let or const keyword. Here's an example:</p>
+        <p>JavaScript has several data types, including strings, numbers, booleans, arrays, objects, and more. Variables can hold different data types.</p>
+        <a href="https://onecompiler.com/javascript?fbclid=IwAR1BcgykU20CbLTov-9lry1BdZWRPysEFBmFtiayBtk8YGX9V9zDbw9jhqEl"><button class="btn">Try Here</button></a>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="content">
+        <h3>5. Operators and Expressions:</h3>
+        <p>JavaScript supports various operators for performing arithmetic, assignment, comparison, logical operations, and more. Here's an example:</p>
+        <a href="https://onecompiler.com/javascript?fbclid=IwAR1BcgykU20CbLTov-9lry1BdZWRPysEFBmFtiayBtk8YGX9V9zDbw9jhqEl"><button class="btn">Try Here</button></a>
+    </div>
+
+    <div class="image">
+         <image src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/348363031_575131607848121_7158327311549791483_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeERsQVdoco0Kg7n4Fgb9ihXet5eh2JGCC163l6HYkYILeAYg_4RZynhQK5-CdnyhmlWYqtrI9KV4_iowfdJXhm-&_nc_ohc=BxOVTEAk8zcAX8ElPZS&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdS0gT87P-09VAo-vpBCS6l1UkurC0Umz8-6p2QXtE6T5Q&oe=64A7B4D8" alt=""></image>
+    </div>
+
+</div>
+
+<div class="row">
+ 
+    <div class="image">
+        <image src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/352566774_1424135671462062_8998157682448557795_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHoU-Kzc-vKpijsQm2CMIE8x369SU4yMyLHfr1JTjIzIkl5opeHZCBOlcIyWevj3ELExs4JCVDXM_lQvQGgX13j&_nc_ohc=XlKCjpsjgFgAX_SPgTr&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdT5OGfvP3AFLeq6U1U7loA2aDY7-fltZBxLXPAbnvv7TQ&oe=64A79D1C" alt=""></image>
+   </div>
+
+    <div class="content">
+        <h3>6. Functions:</h3>
+        <p>Functions are reusable blocks of code that perform a specific task. They help organize and modularize your code. Here's an example:</p>
+        <a href="https://onecompiler.com/javascript?fbclid=IwAR1BcgykU20CbLTov-9lry1BdZWRPysEFBmFtiayBtk8YGX9V9zDbw9jhqEl"><button class="btn">Try Here</button></a>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="content">
+        <h3>7. Events:</h3>
+        <p>JavaScript allows you to respond to user actions, such as clicks, mouse movements, or keyboard inputs, using event handlers. Here's an example of a button click event:</p>
+        <a href="jslesson2.html"><button class="btn">Next Lesson</button></a>
+    </div>
+
+    <div class="image">
+         <image src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/348364985_286969330355378_2776580016961468730_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeG0qpmZfmaOrF0OORgEJBrmXwUe1EavHldfBR7URq8eV-atmoPVgclDkomK96Mll0e8oewNgDIIswj_c4DuZJ7O&_nc_ohc=0AaOePf5w2wAX--P4VI&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdThKa7XLXlnYU-CedvkGnCvyxYkCVuwc2JVwG94SItsRg&oe=64A7AD20" alt=""></image>
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<section id="abouts" class="About2">
+
+<h1 class="heading">Conclusion</h1>
+
+<div class="row">
+
+    <div class="image">
+        <img src="https://stories.freepiklabs.com/api/vectors/microsites/rafiki/render?color=7E57C2FF&background=complete&hide=" alt="">
+    </div>
+    <div class="content">
+        <h3>These are the fundamental concepts of JavaScript that will give you a strong starting point.</h3>
+        <p>In the next lesson, we will delve deeper into JavaScript and explore more advanced topics. Happy coding!</p>
+        <a href="jslesson2.html"><button class="btn">Next Lesson</button></a>
+    </div>
+
+</div>
+
+</section>
+
+<!--about us section ends-->
+
+<!--footer section starts-->
+
+<section class="footer">
+    
+<h1>Created by Grade 11 Students   |   IC1MC </h1>
+
+<div class="icons">
+    <a href="https://www.facebook.com/kara.obenza.14" class="fab fa-facebook-f"></a>
+    <a href="https://twitter.com/ObenzaKara" class="fab fa-twitter"></a>
+    <a href="https://www.instagram.com/karaobenza_/" class="fab fa-instagram"></a>
+</div>
+</section>
+
+<!--footer section ends-->
+
+<!--jquery file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+
+<!--custom js file-->
+
+<script src="js/jslesson.js"></script>
+
+
+</body>
+</html>
